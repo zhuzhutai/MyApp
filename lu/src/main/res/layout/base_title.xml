@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/rl_main_title"
+    android:background="@drawable/main_title_bg"
+    android:orientation="horizontal">
+<!--电影和影院的公共部分-->
+    <TextView
+        android:id="@+id/tv_movie_goto"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/main_title_left"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="北京"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+    <!--电影和部分-->
+    <include layout="@layout/ll_movie_scroll"/>
+
+<!--影院部分-->
+    <LinearLayout
+        android:id="@+id/ll_cinema_title"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/cinema_ib_region"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/main_title_adress" />
+        <ImageButton
+            android:id="@+id/cinema_ib_search"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/main_title_search" />
+    </LinearLayout>
+
+    <!--发现和影院的公用标题部分-->
+    <TextView
+        android:id="@+id/cinema_tv_name"
+        android:text="影院"
+        android:textSize="21sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+</RelativeLayout>

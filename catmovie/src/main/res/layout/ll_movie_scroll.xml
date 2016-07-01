@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_movie_scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerInParent="true"
+    android:padding="2dp"
+    android:background="@drawable/fl_bg"
+    android:orientation="horizontal">
+    <!--白色滑动的背景-->
+    <TextView
+        android:id="@+id/movietitle_scroll_slider"
+        android:background="@drawable/tv_bg"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:id="@+id/movietitle_scroll_parent"
+        android:gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/movietitle_scroll_hot"
+            android:text="热映"
+            style="@style/movie_title_scroll"/>
+        <TextView
+            android:id="@+id/movietitle_scroll_wait"
+            android:text="待映"
+            style="@style/movie_title_scroll"/>
+        <TextView
+            android:id="@+id/movietitle_scroll_sea"
+            android:text="海外"
+            style="@style/movie_title_scroll"/>
+    </LinearLayout>
+
+</FrameLayout>

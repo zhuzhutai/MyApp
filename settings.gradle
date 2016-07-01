@@ -1,0 +1,1 @@
+include ':app', ':xutils_library', ':viewpager', ':test', 'ViewPager_demo', ':ViewPagerIndicator-master', ':Android5.0_0220', ':catmovie', ':library', ':pullToRefreshViewPager', ':PullToRefresh_sample', ':pullToRefreshListFragment', ':lu', ':contactList_Demo', ':BaiduMapsApiASDemo'

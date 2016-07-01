@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="5dp"
+    android:layout_toRightOf="@id/tv_item_title"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_3d"
+        android:text="3D"
+        android:textSize="8sp"
+        android:background="@drawable/item_3d"
+        android:textColor="#ffffff"
+        android:padding="3dp"
+        style="@style/movie_Item"/>
+    <TextView
+        android:id="@+id/tv_imax"
+        android:text="IMAX"
+        android:textSize="8sp"
+        android:layout_toRightOf="@id/tv_3d"
+        android:layout_marginLeft="-4dp"
+        android:background="@drawable/item_imax_bg"
+        android:textColor="@color/color3DIMAX"
+        style="@style/movie_Item"/>
+</LinearLayout>

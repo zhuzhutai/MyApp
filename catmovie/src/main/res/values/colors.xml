@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+   <!-- 热映中的分数的颜色-->
+    <color name="colorScore">#ff9a02</color>
+    <!--热映中的3D_IMAX图标的颜色-->
+    <!--大陆热、待、已映颜色-->
+    <color name="color3DIMAX">#3399cb</color>
+    <!--专题、影评等小按钮的颜色-->
+    <color name="colorButton">#ff9b04</color>
+
+
+
+</resources>

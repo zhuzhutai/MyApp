@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_movie_headers"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <FrameLayout
+        android:id="@+id/fl_movie_title_search"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/main_title_bg"
+        android:layout_height="50dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight= "15dp"
+            android:layout_gravity="center"
+            android:padding="7dp"
+            android:gravity="center"
+            android:hint="找电影、影人、影院"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="@drawable/tv_movie_search"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:src="@drawable/movie_title_search"/>
+    </FrameLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+</LinearLayout>
